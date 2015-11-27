@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* Resume Css */
+.resume{
+	opacity:1;
+}
+
+.resume .details .skill.bn .progress-bar {
+	width:100%;	
+}
+
+.resume .details .skill.en .progress-bar {
+	width:85%;	
+}
+
+.resume .details .skill.php .progress-bar {
+	width:90%;	
+}
+
+.resume .details .skill.css .progress-bar {
+	width:90%;	
+}
+
+.resume .details .skill.html .progress-bar {
+	width:90%;	
+}
+
+.resume .details .skill.ja .progress-bar {
+	width:90%;	
+}
+
+.resume .details .skill.angu .progress-bar {
+	width:50%;	
+}
+
+
+
+

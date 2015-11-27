@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* Portfolio Css */
+
+.portfolio{
+	opacity:1;
+}
+
+.portfolio .row img{
+	opacity:1;
+}

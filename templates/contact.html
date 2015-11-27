@@ -1,0 +1,22 @@
+<link ng-href="{{href}}" type="{{type}}" rel="stylesheet" />
+<div ng-animate="'animate'" class="contact">
+    <form ng-controller="validateCtrl"  name="myForm" novalidate>
+    
+        <p>Name:<br>
+          <input type="text" placeholder="Enter name" name="name" ng-model="name" required>          
+        </p>
+        
+        <p>Email:<br>
+          <input type="email" name="email" placeholder="Enter Email" ng-model="email" required>          
+        </p>
+        <p>Message:<br>
+          <textarea name="message" placeholder="Enter Your Message" ng-model="textarea" required></textarea>         
+        </p>
+        
+        <p>
+          <input type="submit" value="SEND" class="sbmt" ng-disabled="myForm.name.$dirty && myForm.name.$invalid ||
+          myForm.email.$dirty && myForm.email.$invalid">
+        </p>
+    
+    </form>
+</div>

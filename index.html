@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Angular Js Dummy Profile</title>
+
+<!-- Local links -->
+<link rel="stylesheet" href="assets/css/awesome/font-awesome.min.css" />
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<script src="assets/js/angular/angular.min.js"></script>
+<script src="assets/js/angular/angular-route.min.js"></script>
+
+<!-- Git links -->
+<!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+<!-- load angularjs and the seperate route module 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+-->
+<!-- load up our app -->
+<script data-require="angular-animate@*" data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular-animate.js"></script>
+<script src="app/app.js"></script>
+
+</head>
+
+<body ng-app="profile">
+	<section id="main">
+        <div class="bg-holder container bg-image animated infinite zooming visible">
+            
+        </div> 
+        <div ng-view class="content col-xs-12 col-sm-9 col-lg-10">
+                
+         </div>       
+         <div class="menu col-xs-12 col-sm-3 col-lg-2" ng-controller="MenuController">
+         	<ul>
+            	<li class="mn-list">
+              		<a ng-class="{ active: isActive('/') }" href="#">
+                    	<span class="fa fa-user"></span>
+                    </a>  	
+                </li>
+                <li class="mn-list">
+                	<a ng-class="{ active: isActive('/resume') }" href="#/resume">
+                		<span class="fa fa-file"></span>
+                    </a>
+                </li>
+                <li class="mn-list">
+                	<a ng-class="{ active: isActive('/portfolio') }" href="#/portfolio">
+                		<span class="fa fa-briefcase"></span>
+                    </a>
+                </li>
+                <li class="mn-list">
+                	<a ng-class="{ active: isActive('/contact') }" href="#/contact">
+                		<span class="fa fa-phone"></span>
+                    </a>
+                </li>
+            </ul>
+         </div>
+    </section>
+</body>
+</html>
